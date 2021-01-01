@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Website Layout 3</title>
+        <style>
+            * {
+              box-sizing: border-box; 
+            }
+            header{
+                font-style: italic;
+                font-weight: bold;
+                font-size: xx-large;
+            }
+            body {
+              display: flex;
+              min-height: 100vh;
+              flex-direction: row;
+              margin: 0;
+            }
+            .col-1 {
+              background: #D7E8D4;
+              flex: 1;
+            }
+            .col-2 {
+              display: flex;
+              flex-direction: column;
+              flex: 5;
+            }
+            .content {
+              display: flex;
+              flex-direction: row;
+            }
+            .content > article {
+              flex: 4;
+              min-height: 60vh;
+            }
+            header, footer {
+              background: yellowgreen;
+              height: 20vh;
+            }
+            header, footer, article, nav {
+              padding: 1em;
+            }
+        </style>
+    </head>
+    <body>
+        <nav class="col-1">Nav</nav>
+        <div class="col-2">
+            <header>Year 2020 Explained</header>
+            <main class="content">
+            <article>
+                <h2>2020</h2>
+                <p>2020 was a leap year starting on Wednesday of the Gregorian 
+                   calendar, the 2020th year of the Common Era (CE) and Anno Domini (AD) designations, the 20th year of the 
+                   3rd millennium, the 20th year of the 21st century, and the 1st year of the 2020s decade.</p>
+                <p>2020 was heavily defined by the COVID-19 pandemic, which has led to global social and economic disruption, 
+                   mass cancellations and postponements of events, worldwide lockdowns and the largest economic recession since 
+                   the Great Depression of the 1930s.[1] Geospatial World also called it "the worst year in terms of climate 
+                   change" in part due to major climate disasters worldwide, including major bushfires in Australia and the 
+                   western United States, as well as extreme tropical cyclone activity affecting large parts of North America. 
+                   A United Nations progress report published in December 2020 indicated that none of the international Sustainable 
+                   Development Goals for 2020 were achieved.</p>
+                <p>2020 was declared the "International Year of Plant Health" by the United Nations and "Year of the Nurse and 
+                   Midwife" by the World Health Organization.</p>
+
+            </article>
+            </main>
+            <footer>Footer</footer>
+        </div>
+    </body>
+</html>
